@@ -10,7 +10,7 @@ const countdown = () => {
   const endDate = new Date("Dec 31 2021 00:00:00").getTime();
   const now = new Date().getTime();
 
-  const diff = endDate - now;
+  let diff = endDate - now;
 
   if (now > endDate) {
     diff = endDate - endDate;
